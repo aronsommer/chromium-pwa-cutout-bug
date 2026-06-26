@@ -1,6 +1,6 @@
 # Bug Report: PWA `display: fullscreen` ignores `viewport-fit=cover` for camera cutout
 
-**Chromium issue tracker:** https://issues.chromium.org
+**Chromium issue:** https://issues.chromium.org/issues/527962020
 
 ---
 
