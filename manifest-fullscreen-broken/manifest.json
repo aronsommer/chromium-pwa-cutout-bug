@@ -1,0 +1,16 @@
+{
+  "name": "Cutout Test – Manifest Fullscreen",
+  "short_name": "Cutout BUG",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "background_color": "#16a34a",
+  "theme_color": "#16a34a",
+  "icons": [
+    {
+      "src": "../icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Cutout Test – Standalone + JS Fullscreen",
+  "short_name": "Cutout OK",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#16a34a",
+  "theme_color": "#16a34a",
+  "icons": [
+    {
+      "src": "../icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
