@@ -63,9 +63,21 @@
         cursor: pointer;
         display: none;
       }
+
+      .diagnostic {
+        margin-top: 16px;
+        background: rgba(0, 0, 0, 0.35);
+        border-radius: 8px;
+        padding: 10px 14px;
+        font-size: 13px;
+        font-family: monospace;
+        text-align: left;
+        line-height: 1.6;
+      }
     </style>
   </head>
   <body>
+    <div id="sat-probe" style="position:fixed;top:0;left:0;width:0;height:env(safe-area-inset-top);pointer-events:none;visibility:hidden;"></div>
     <div class="black-bar-label">
       ⬆️ Black bar here (system cutout) — should be green
     </div>
@@ -76,6 +88,9 @@
         instead of green.
       </p>
       <button id="install-btn">Install PWA</button>
+      <div class="diagnostic" id="diagnostic">
+        env(safe-area-inset-top): <span id="sat-value">reading…</span>
+      </div>
     </div>
 
     <script>
@@ -95,6 +110,9 @@
           deferredPrompt = null;
         });
       });
+
+      const satValue = document.getElementById("sat-probe").offsetHeight + "px";
+      document.getElementById("sat-value").textContent = satValue;
     </script>
   </body>
 </html>
